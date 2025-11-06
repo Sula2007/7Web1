@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - God loves the Trinity</title>
+  <!-- TASK 0: Include jQuery from CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Task 1: Flexbox Header / Nav -->
+  <header class="main-header">
+    <div class="logo">God loves the Trinity</div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reserve.html">Reservations</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <!-- TASK 3: Popup subscription button -->
+        <li><button id="subscribe-btn" class="subscribe-button">Subscribe</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="gallery-header" style="text-align:center; padding: 20px;">
+      <h1>Restaurant Gallery</h1>
+      <p class="highlighted-text">Take a visual tour of our divine space and cuisine</p>
+    </section>
+
+    <section class="about-content" style="max-width:900px; margin:0 auto;">
+      <h2>Our Beautiful Restaurant</h2>
+      <p>Step into God loves the Trinity and experience the warm, welcoming atmosphere that makes every meal special. From our elegant dining room to our carefully crafted dishes, every detail is designed to create an unforgettable experience.</p>
+    </section>
+
+    <!-- Search bar will be added here by jQuery -->
+
+    <!-- Task 4: Grid Gallery with captions -->
+    <section class="gallery">
+      <!-- 12 items -->
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=400&fit=crop" alt="Main dining room"><div class="caption">Main dining room</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop" alt="Restaurant interior"><div class="caption">Restaurant interior</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600&h=400&fit=crop" alt="Cozy seating area"><div class="caption">Cozy seating area</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=600&h=400&fit=crop" alt="Bar area"><div class="caption">Bar area</div></div>
+
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&h=400&fit=crop" alt="Pasta dish"><div class="caption">Pasta dish</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&h=400&fit=crop" alt="Gourmet burger"><div class="caption">Gourmet burger</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&h=400&fit=crop" alt="Salmon dinner"><div class="caption">Salmon dinner</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop" alt="Dessert platter"><div class="caption">Dessert platter</div></div>
+
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=400&fit=crop" alt="Private dining event"><div class="caption">Private dining</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Wedding celebration"><div class="caption">Wedding celebration</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&h=400&fit=crop" alt="Birthday celebration"><div class="caption">Birthday celebration</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop" alt="Business dinner"><div class="caption">Business dinner</div></div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Experience It Yourself</h2>
+      <p>Pictures can only tell part of the story. Come visit us and experience the divine difference!</p>
+      <a href="reserve.html" class="button-style">Make a Reservation</a>
+    </section>
+  </main>
+
+  <!-- TASK 3: Popup Subscription Form -->
+  <div id="subscription-popup" class="popup-overlay">
+    <div class="popup-content">
+      <span id="close-popup" class="close-btn">&times;</span>
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get the latest updates on special offers and new menu items!</p>
+      <form id="subscription-form">
+        <input type="email" id="popup-email" placeholder="Enter your email" required>
+        <button type="submit" class="button-style">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 God loves the Trinity Restaurant. All rights reserved.</p>
+    <p>Address: 123 Divine Street, Heaven's Gate City</p>
+    <!-- TASK 5: Current Date and Time -->
+    <p class="datetime-display">Current time: <span id="current-datetime"></span></p>
+    <p class="team-members">Team: Newcomers(Chingiz, Sultan, Kaisar) Group: SE-2405</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
