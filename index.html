@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>God loves the Trinity - Home</title>
+  <!-- TASK 0: Include jQuery from CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Task 1: Flexbox Header / Nav -->
+  <header class="main-header">
+    <div class="logo">God loves the Trinity</div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reserve.html">Reservations</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <!-- TASK 3: Popup subscription button -->
+        <li><button id="subscribe-btn" class="subscribe-button">Subscribe</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Banner -->
+    <section id="top-banner">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=400&fit=crop" alt="Restaurant Interior" class="banner-image">
+      <div class="banner-text">
+        <h2>Welcome to Divine Dining</h2>
+        <p class="highlighted-text">Experience heavenly flavors in our sacred space</p>
+      </div>
+    </section>
+
+    <!-- TASK 4: Background Color Changer -->
+    <section class="bg-color-section">
+      <p>Want to change the mood? Try a different background color!</p>
+      <button id="bg-color-btn" class="button-style">Change Background Color</button>
+    </section>
+
+    <!-- Stats Section will be added here by jQuery -->
+
+    <!-- Task 2: Card Row -->
+    <section class="card-container">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=300&h=200&fit=crop" alt="Fresh Ingredients">
+        <div class="card-content">
+          <h3>Fresh Ingredients</h3>
+          <p>We use only the freshest, locally sourced ingredients.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=300&h=200&fit=crop" alt="Cozy Atmosphere">
+        <div class="card-content">
+          <h3>Cozy Atmosphere</h3>
+          <p>Relax and enjoy the divine ambiance of our restaurant.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&h=200&fit=crop" alt="Traditional Recipes">
+        <div class="card-content">
+          <h3>Traditional Recipes</h3>
+          <p>Our dishes are inspired by time-honored traditions.</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task 3: Grid Layout -->
+    <section class="layout">
+      <div class="layout-header">About our Restaurant</div>
+      <aside class="sidebar">God loves the Trinity</aside>
+      <div class="main">Welcome to God loves the Trinity — where flavor meets comfort. Explore our carefully crafted menu featuring fresh ingredients, signature dishes, and timeless favorites. Whether you're here for a quick bite or a full dining experience, we've got something to satisfy every craving.</div>
+      <div class="footer">Inside our Restaurant</div>
+    </section>
+
+    <!-- Task 4: Image Gallery -->
+    <section class="gallery">
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop" alt="Hall"><div class="caption">Hall</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop" alt="Inside"><div class="caption">Inside</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=400&h=300&fit=crop" alt="Couches"><div class="caption">Couches</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=400&h=300&fit=crop" alt="Terrace"><div class="caption">Terrace</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop" alt="Tables"><div class="caption">Tables</div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop" alt="Dining Area"><div class="caption">Dining Area</div></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <h2>Visit Us Today</h2>
+      <p>Come experience the divine difference at God loves the Trinity</p>
+      <a href="reserve.html" class="button-style">Make a Reservation</a>
+    </section>
+  </main>
+
+  <!-- TASK 3: Popup Subscription Form -->
+  <div id="subscription-popup" class="popup-overlay">
+    <div class="popup-content">
+      <span id="close-popup" class="close-btn">&times;</span>
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get the latest updates on special offers and new menu items!</p>
+      <form id="subscription-form">
+        <input type="email" id="popup-email" placeholder="Enter your email" required>
+        <button type="submit" class="button-style">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 God loves the Trinity Restaurant. All rights reserved.</p>
+    <p>Address: 123 Divine Street, Heaven's Gate City</p>
+    <!-- TASK 5: Current Date and Time -->
+    <p class="datetime-display">Current time: <span id="current-datetime"></span></p>
+    <p class="team-members">Team: Newcomers(Chingiz, Sultan, Kaisar) Group: SE-2405</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
